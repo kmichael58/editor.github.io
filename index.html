@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styl.css">
+  <head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FontAwesome CDN -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+  </head>
+  
+  <title>Text Editor</title>
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+     <ul class="tool-list">
+      <li class="tool">
+        <button type="button" data-command="justifyLeft" class="tool--btn">
+          <i class="fas fa-align-left"></i>
+        </button>
+      </li>
+      <li class="tool">
+        <button class="tool--btn" type="button" data-command="justifyCenter">
+          <i class="fas fa-align-center"></i>
+        </button>
+      </li>
+      <li class="tool">
+        <button class="tool--btn" type="button" data-command="bold">
+          <i class="fas fa-bold"></i>
+        </button>
+      </li>
+      <li class="tool">
+        <button class="tool--btn" type="button" data-command="italic">
+          <i class="fas fa-italic"></i>
+        </button>
+      </li>
+      <li class="tool">
+        <button class="tool--btn" data-command="underline" type="button">
+          <i class="fas fa-underline"></i>
+        </button>
+      </li>
+      <li class="tool">
+        <button class="tool--btn" type="button" data-command="insertOrderList">
+          <i class="fas fa-list-ol"></i>
+        </button>
+      </li>
+      <li class="tool">
+        <button class="tool--btn" type="button" data-command="insertUnorderedList">
+          <i class="fas fa-list-ul"></i>
+        </button>
+      </li>
+      <li class="tool">
+        <button class="tool--btn" type="button" data-command="createLink">
+          <i class="fas fa-link"></i>
+        </button>
+      </li>
+     </ul>
+    </div>
+
+    <div id="output" contenteditable="true"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
